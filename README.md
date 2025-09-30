@@ -7,19 +7,19 @@ Para este desafio, pensou-se na seguinte case: 🥣 Eu sou uma confeiteira e que
 
 ‼️Vamos análisar como a arquitetura funciona
 
-⭐ [Site Principal (EC2 e EBS)] (#Site Principal (EC2 e EBS))
-⭐ [Galeria com os Produtos (S3)] (#Galeria com os Produtos (S3))
-⭐ [O formulário de Contato (Lambda)] (#O formulário de Contato (Lambda))
+⭐ Site Principal (EC2 e EBS) 
+⭐ Galeria com os Produtos (S3) 
+⭐ O formulário de Contato (Lambda) 
 
-##Site Principal (EC2 e EBS)
+**Site Principal (EC2 e EBS)**
 
 O EC2 é o meu servidor web principal, onde irei hospedar as páginas estáticas do site. Já o EBS é o disco rígido do servidor EC2, onde todos os arquivos estáticos do site e o software do servidor web são armazenados. 
 
-##Galeria com os Produtos (S3)
+**Galeria com os Produtos (S3)**
 
 Armazenar todas as fotos dos meus produtos no EBS pode tornaro sistema lento, a solução é utilizar o S3. Cada foto será carregada diretamente para um bucket S3 e no código HTML da galeria será inserido um link para a foto no S3, assim, quando um visitante clicar para ver a foto em um tamanho maior, a requisão será feita diretamente ao S3, otimizando o serviço ao se tratar de arquivos grande, reduzindo custos e aliviando a carga do EC2.
 
-##O formulário de Contato (Lambda)
+**O formulário de Contato (Lambda)**
 
 Quando um visitando preencher os campos do formulário (Ex: Nome, e-mail, mensagem), e clicar em "Enviar", podemos ter um código JavaSripit na página que fará uma chamada de API para o Lambda. Assim, o Lambda é ativado lendo todos os dados enviados pelo formulário. A função pode, por exemplo, salvar a mensagem em um arquivo de texto no bucket S3 ou me enviar um e-mail e assim que a tarefa é concluída, o Lambda pode retornar uma resposta de "Sucesso" para a página, confirmando o envio.
 
