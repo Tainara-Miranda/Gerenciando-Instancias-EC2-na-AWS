@@ -5,7 +5,7 @@ Este desafio consiste em criar uma arquitetura, realizada pelo Drawio, para prat
 
 Para este desafio, pensou-se na seguinte case: 🥣 Eu sou uma confeiteira e quero um site que sirva como um portfólio para o meu trabalho. Nesse site terá algumas páginas estáticas (Início, Sobre, Contato) e uma página dinâmica (sempre haverá alterações) sendo a galeria com meus produtos. Dentro deste site há também como um possível cliente preencher um formulário para que possam entrar em contato comigo. 
 
-‼️Vamos análisar como a arquitetura funciona:
+‼️Vamos analisar como a arquitetura funciona:
 
 ⭐ Site Principal (EC2 e EBS) 
 
