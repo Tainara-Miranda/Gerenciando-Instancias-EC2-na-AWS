@@ -30,3 +30,5 @@ Quando um visitando preencher os campos do formulário (Ex: Nome, e-mail, mensag
 ------------------------------------------------------
 
 💁 O case apresentado pode ser de certa forma simples, apenas para aplicar os conceitos e formar uma arquitetura, mas é o suficiente para entendermos os conceitos e funcionamento das instâncias EC2 na AWS e também o armazenamento por EBS e S3, ainda encaixando a função LAMBDA.
+
+➡️ A imagem da arquitetura proposta está disponível no diretório "\images"!
