@@ -8,7 +8,9 @@ Para este desafio, pensou-se na seguinte case: 🥣 Eu sou uma confeiteira e que
 ‼️Vamos análisar como a arquitetura funciona
 
 ⭐ Site Principal (EC2 e EBS) 
+
 ⭐ Galeria com os Produtos (S3) 
+
 ⭐ O formulário de Contato (Lambda) 
 
 **Site Principal (EC2 e EBS)**
