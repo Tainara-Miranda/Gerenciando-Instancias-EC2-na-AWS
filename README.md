@@ -27,4 +27,6 @@ Armazenar todas as fotos dos meus produtos no EBS pode tornaro sistema lento, a 
 
 Quando um visitando preencher os campos do formulário (Ex: Nome, e-mail, mensagem), e clicar em "Enviar", podemos ter um código JavaSripit na página que fará uma chamada de API para o Lambda. Assim, o Lambda é ativado lendo todos os dados enviados pelo formulário. A função pode, por exemplo, salvar a mensagem em um arquivo de texto no bucket S3 ou me enviar um e-mail e assim que a tarefa é concluída, o Lambda pode retornar uma resposta de "Sucesso" para a página, confirmando o envio.
 
+------------------------------------------------------
+
 💁 O case apresentado pode ser de certa forma simples, apenas para aplicar os conceitos e formar uma arquitetura, mas é o suficiente para entendermos os conceitos e funcionamento das instâncias EC2 na AWS e também o armazenamento por EBS e S3, ainda encaixando a função LAMBDA.
